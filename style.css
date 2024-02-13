@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: clamp(40%, 1% + 2vw, 62.5%);
+}
+
+body {
+    background: linear-gradient(45deg, #f3f3f7 0%, rgb(18, 18, 18) 100%) no-repeat;
+    background-size: 200% 200%;
+    height: 100vh;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+      
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+      
+}
+
+.sr-only {  /*ACESSIBILIDADE*/
+    width: .1rem;
+    height: .1rem;
+    position: absolute;
+    overflow: hidden;
+    margin-left: -.1rem;
+    padding: 0;
+    border: 0;
+    appearance: none;
+}
+
+.app {
+    max-width: 42.5rem;
+    margin: auto;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    margin: 3.0rem 0 0;
+}
+
+nav a {
+    font-size: 1.4rem;
+    color: black;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+nav img {
+    width: 7.0rem;
+    border: .5rem solid black;
+    border-radius: 50%;
+}
+
+nav a:hover {
+    font-weight: 700;
+}
+
+.active {
+    font-weight: 700;
+}
+
+/* PAGE HOME*/ 
+
+.home h1 {
+    color: black;
+    text-align: center;
+    margin: 3.0rem 0;
+    font-size: 2.3rem;
+}
+
+.socialNetwork {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+
+.socialNetwork img {
+    width: 10.0rem;
+}
+
+/* PAGE ABOUT*/
+
+.about h1 {
+    margin: 2.0rem;
+}
+
+.about h2 {
+    margin: 2.0rem;
+}
+
+.about p {
+    margin: 2.0rem;
+}
+
+.skills {
+    display: flex;
+    margin-left: 2.0rem;
+    flex-direction: column;
+}
+
+.skills img {
+    width: 3.8rem;
+    vertical-align: middle;
+}
+
+.skills p {
+    margin: 0;
+}
+
+/* PAGE EDUCATION*/
+
+.education h3 {
+    margin: 0 2.0rem 5.0rem;
+}
+
+.education h2 {
+    margin: 3.0rem 2.0rem 2.0rem;
+}
+
+/* PAGE LANGUAGES*/ 
+
+.languages img {
+    width: 9.0rem;
+    margin-right: 1.5rem;
+    vertical-align: middle;
+}
+
+.languages h3 {
+    margin: 3.0rem;
+}
+
+@media (min-width: 70.0rem) {
+    .app {
+        max-width: 100%;
+    }
+
+    nav {
+        gap: 5.5rem;
+        justify-content: flex-start;
+        margin-left: 5.0rem;
+    }
+
+    nav a {
+        font-size: 2.8rem;
+    }
+
+    /* PAGE HOME*/
+
+    .home h1 {
+        font-size: 4.8rem;
+        margin-bottom: 10.0rem;
+    }
+
+    .socialNetwork {
+        flex-direction: row;
+        justify-content: center;
+        gap: 10.0rem;
+    }
+
+    .socialNetwork img {
+        width: 15.0rem;
+    }
+
+    /* PAGE ABOUT*/
+
+    .about h1 {
+        font-size: 3.8rem;
+        margin: 3.0rem 0 0 5.0rem;
+    }
+
+    .about h2 {
+        font-size: 2.0rem;
+        margin-left: 5.0rem;
+    }
+
+    .about p {
+        margin-left: 7.0rem;
+        font-size: 1.4rem;
+    }
+
+    .skills p {
+        margin-left: 5.0rem;
+    }
+
+    /* EDUCATION */
+
+    .education h2 {
+        font-size: 2.5rem;
+        margin: 8.0rem 0 5.0rem 5.0rem;
+    }
+
+    .education h3 {
+        font-size: 1.6rem;
+        margin-left: 5.0rem;
+    }
+
+    /* LANGUAGES */
+
+    .languages {
+        margin: 8.0rem 0 0 5.0rem;
+    }
+
+    .languages h3 {
+        font-size: 1.8rem;
+    }
+
+    .active {
+        font-weight: 700;
+    }
+}
+
